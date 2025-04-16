@@ -1,0 +1,27 @@
+<!-- This is the main HTML file for the Glow Bridal Try-On application. It includes a video element for the camera feed, an image overlay for hairstyles, and a gallery of hairstyle options. The JavaScript file 'main.js' is included at the end to handle the functionality. -->
+<!-- The HTML structure is simple, with a title, video element, overlay image, and a gallery of images. The gallery images have an onclick event to change the hairstyle overlay when clicked. The CSS file 'style.css' is linked for styling. -->
+<!-- The video element is set to autoplay and plays inline for mobile devices. The overlay image is initially set to the first hairstyle. The gallery contains three hairstyle images, each with an onclick event to change the overlay image. -->
+<!-- The JavaScript file 'main.js' is included at the end to handle the functionality. -->
+<!-- The HTML file is structured to be responsive and user-friendly, allowing users to easily try on different hairstyles using their webcam. -->
+<!-- The following code is a simple HTML structure for the Glow Bridal Try-On application. It includes a video element for the camera feed, an image overlay for hairstyles, and a gallery of hairstyle options. The JavaScript file 'main.js' is included at the end to handle the functionality. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow Try-On</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Glow Bridal Try-On</h1>
+  <video id="video" autoplay playsinline></video>
+  <img id="overlay" src="hairstyles/style1.png" alt="Hairstyle Overlay" />
+  <div class="gallery">
+    <img src="hairstyles/style1.png" onclick="changeStyle(this.src)" />
+    <img src="hairstyles/style2.png" onclick="changeStyle(this.src)" />
+    <img src="hairstyles/style3.png" onclick="changeStyle(this.src)" />
+  </div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
+`;

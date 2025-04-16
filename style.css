@@ -1,0 +1,38 @@
+/* This CSS is used to style the video player and the overlay */
+/* It includes styles for the body, video element, overlay, and gallery */
+/* The body has a white background, sans-serif font, and centered text */       
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff8f8;
+  font-family: sans-serif;
+  text-align: center;
+}
+video {
+  width: 80vw;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+#overlay {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  pointer-events: none;
+  z-index: 10;
+}
+.gallery {
+  margin-top: 2rem;
+}
+.gallery img {
+  width: 80px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+.gallery img:hover {
+  transform: scale(1.1);
+}
